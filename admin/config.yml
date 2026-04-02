@@ -1,0 +1,168 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: he
+
+collections:
+
+  - name: "settings"
+    label: "⚙️ הגדרות אתר"
+    files:
+
+      - name: "general"
+        label: "🏠 תוכן ראשי והירו"
+        file: "_data/general.json"
+        fields:
+          - { label: "שם העסק", name: "business_name", widget: "string", default: "AIfixsmart" }
+          - { label: "סלוגן", name: "tagline", widget: "string", default: "תיקונים קטנים בדרך חכמה" }
+          - { label: "Hero – כותרת שורה 1", name: "hero_line1", widget: "string", default: "כל תיקון בבית —" }
+          - { label: "Hero – כותרת שורה 2 (צהובה)", name: "hero_line2", widget: "string", default: "אנחנו מגיעים אליך היום" }
+          - { label: "Hero – תיאור", name: "hero_desc", widget: "text", default: "הנדימן מקצועי ומבוטח לכל עבודות הבית." }
+          - { label: "Hero – הבטחה 1", name: "promise1", widget: "string", default: "הצעת מחיר תוך דקות — ללא התחייבות" }
+          - { label: "Hero – הבטחה 2", name: "promise2", widget: "string", default: "מגיעים מהיום להיום ברוב האזורים" }
+          - { label: "Hero – הבטחה 3", name: "promise3", widget: "string", default: "ביטוח מקצועי מלא + אחריות על העבודה" }
+          - { label: "Hero – הבטחה 4", name: "promise4", widget: "string", default: "מחיר סופי לפני תחילת עבודה — ללא הפתעות" }
+          - { label: "סטטיסטיקה – לקוחות", name: "stat_customers", widget: "string", default: "500+" }
+          - { label: "סטטיסטיקה – דירוג", name: "stat_rating", widget: "string", default: "5★" }
+          - { label: "סטטיסטיקה – שנות ניסיון", name: "stat_years", widget: "string", default: "8+" }
+
+      - name: "contact"
+        label: "📞 פרטי קשר"
+        file: "_data/contact.json"
+        fields:
+          - { label: "טלפון (ספרות בלבד)", name: "phone_raw", widget: "string", default: "0552611010" }
+          - { label: "טלפון (לתצוגה)", name: "phone_display", widget: "string", default: "055-261-1010" }
+          - { label: "מספר וואטסאפ (עם קוד מדינה)", name: "whatsapp", widget: "string", default: "9720552611010" }
+          - { label: "הודעת ברירת מחדל לוואטסאפ", name: "wa_msg", widget: "string", default: "שלום AIfixsmart, אשמח לקבל הצעת מחיר" }
+          - { label: "שעות פעילות", name: "hours", widget: "string", default: "08:00–20:00, ימים א–ו" }
+          - { label: "כתובת אימייל (אופציונלי)", name: "email", widget: "string", required: false }
+
+      - name: "services"
+        label: "🔧 שירותים"
+        file: "_data/services.json"
+        fields:
+          - { label: "כותרת הסקשן", name: "section_title", widget: "string", default: "מה אנחנו עושים?" }
+          - { label: "תת-כותרת", name: "section_sub", widget: "string", default: "כל מה שהבית שלך צריך — איש מקצוע אחד אמין" }
+          - label: "שירות 1 – תליית טלוויזיה"
+            name: "tv"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "תליית טלוויזיה" }
+              - { label: "תיאור", name: "desc", widget: "text" }
+              - { label: "פיצ'ר 1", name: "f1", widget: "string" }
+              - { label: "פיצ'ר 2", name: "f2", widget: "string" }
+              - { label: "פיצ'ר 3", name: "f3", widget: "string" }
+              - { label: "הצג תג 'הכי מבוקש'", name: "popular", widget: "boolean", default: true }
+          - label: "שירות 2 – הרחקת יונים"
+            name: "birds"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "הרחקת יונים" }
+              - { label: "תיאור", name: "desc", widget: "text" }
+              - { label: "פיצ'ר 1", name: "f1", widget: "string" }
+              - { label: "פיצ'ר 2", name: "f2", widget: "string" }
+              - { label: "פיצ'ר 3", name: "f3", widget: "string" }
+          - label: "שירות 3 – אינסטלציה קלה"
+            name: "plumbing"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "אינסטלציה קלה" }
+              - { label: "תיאור", name: "desc", widget: "text" }
+              - { label: "פיצ'ר 1", name: "f1", widget: "string" }
+              - { label: "פיצ'ר 2", name: "f2", widget: "string" }
+              - { label: "פיצ'ר 3", name: "f3", widget: "string" }
+          - label: "שירות 4 – הרכבת רהיטים"
+            name: "furniture"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string" }
+              - { label: "תיאור", name: "desc", widget: "text" }
+          - label: "שירות 5 – חשמל קל"
+            name: "electric"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string" }
+              - { label: "תיאור", name: "desc", widget: "text" }
+          - label: "שירות 6 – התקנת מזגנים"
+            name: "ac"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string" }
+              - { label: "תיאור", name: "desc", widget: "text" }
+
+      - name: "reviews"
+        label: "⭐ ביקורות לקוחות"
+        file: "_data/reviews.json"
+        fields:
+          - label: "ביקורות"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "שם הלקוח", name: "name", widget: "string" }
+              - { label: "עיר", name: "city", widget: "string" }
+              - { label: "דירוג", name: "rating", widget: "select", options: ["5", "4", "3"], default: "5" }
+              - { label: "טקסט הביקורת", name: "text", widget: "text" }
+              - { label: "תג שירות", name: "service", widget: "string" }
+
+      - name: "faq"
+        label: "❓ שאלות נפוצות"
+        file: "_data/faq.json"
+        fields:
+          - label: "שאלות ותשובות"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "שאלה", name: "question", widget: "string" }
+              - { label: "תשובה", name: "answer", widget: "text" }
+
+      - name: "process"
+        label: "🔄 תהליך העבודה"
+        file: "_data/process.json"
+        fields:
+          - { label: "כותרת", name: "title", widget: "string", default: "תוך דקות לוקחים אותך מפנייה לפתרון" }
+          - label: "שלב 1"
+            name: "step1"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "ממלא טופס" }
+              - { label: "תיאור", name: "desc", widget: "string", default: "30 שניות, ללא התחייבות" }
+          - label: "שלב 2"
+            name: "step2"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "מקבל הצעה" }
+              - { label: "תיאור", name: "desc", widget: "string", default: "נחזור אליך תוך דקות עם מחיר מדויק" }
+          - label: "שלב 3"
+            name: "step3"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "קובעים מועד" }
+              - { label: "תיאור", name: "desc", widget: "string", default: "לרוב מהיום להיום" }
+          - label: "שלב 4"
+            name: "step4"
+            widget: "object"
+            fields:
+              - { label: "כותרת", name: "title", widget: "string", default: "עבודה נקייה" }
+              - { label: "תיאור", name: "desc", widget: "string", default: "מגיעים, עובדים, מנקים ויוצאים" }
+
+      - name: "cta"
+        label: "📣 כפתורי CTA"
+        file: "_data/cta.json"
+        fields:
+          - { label: "כותרת CTA תחתון", name: "title", widget: "string", default: "מוכן לסיים את הבעיה בבית?" }
+          - { label: "תת-כותרת", name: "subtitle", widget: "string", default: "אל תדחה — השאר פרטים עכשיו וקבל מענה תוך דקות" }
+          - { label: "טקסט כפתור וואטסאפ", name: "wa_btn", widget: "string", default: "💬 וואטסאפ עכשיו" }
+          - { label: "טקסט כפתור טופס", name: "form_btn", widget: "string", default: "✉️ השאר פרטים" }
+
+      - name: "seo"
+        label: "🔍 SEO – גוגל"
+        file: "_data/seo.json"
+        fields:
+          - { label: "כותרת עמוד (Title Tag)", name: "title", widget: "string", default: "AIfixsmart | הנדימן החכם – תיקונים קטנים בדרך חכמה" }
+          - { label: "תיאור (Meta Description – עד 160 תווים)", name: "description", widget: "text" }
+          - { label: "מילות מפתח", name: "keywords", widget: "text" }
+          - { label: "Google Analytics ID (אופציונלי)", name: "ga_id", widget: "string", required: false }

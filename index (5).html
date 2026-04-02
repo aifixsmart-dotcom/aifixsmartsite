@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIfixsmart | תיקונים קטנים בדרך חכמה | השרון והמרכז</title>
+<meta name="description" content="AIfixsmart – תיקונים קטנים בדרך חכמה. תליית טלוויזיה, הרחקת יונים, אינסטלציה קלה. הצעת מחיר תוך דקות. מגיעים מהיום להיום בכל אזור השרון והמרכז.">
+<meta name="keywords" content="הנדימן, AIfixsmart, תליית טלוויזיה, הרחקת יונים, אינסטלציה, השרון, גוש דן, ראש העין, כפר סבא, נתניה, רמת גן">
+<meta property="og:title" content="AIfixsmart – תיקונים קטנים בדרך חכמה">
+<meta property="og:description" content="הנדימן החכם. הצעת מחיר תוך דקות. מגיעים אליך היום.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aifixsmart.co.il">
+<link rel="canonical" href="https://aifixsmart.co.il">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Heebo',sans-serif;background:#f8f6f0;color:#111827;overflow-x:hidden;}
+:root{
+  --y:#f5c518;--yd:#d4aa10;--dark:#111827;--black:#0a0a0a;
+  --ow:#f8f6f0;--w:#fff;--gray:#6b7280;--light:#f3f4f6;
+  --border:#e5e7eb;--r:14px;--g:#25d366;
+}
+
+/* TOPBAR */
+.topbar{background:var(--y);text-align:center;padding:9px 20px;font-size:.85rem;font-weight:700;color:var(--black);}
+.topbar a{color:var(--black);text-decoration:none;font-weight:900;}
+.topbar a:hover{text-decoration:underline;}
+
+/* NAV */
+nav{background:var(--dark);padding:0 5%;display:flex;justify-content:space-between;align-items:center;height:66px;position:sticky;top:0;z-index:200;box-shadow:0 2px 30px rgba(0,0,0,.4);}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.lb{background:var(--y);padding:5px 10px;border-radius:10px;display:flex;flex-direction:column;align-items:center;line-height:1;}
+.lb .ai{font-size:.68rem;font-weight:900;color:var(--black);letter-spacing:1px;}
+.lb .wr{font-size:1rem;}
+.lt .br{color:#fff;font-size:1rem;font-weight:900;display:block;line-height:1;}
+.lt .br em{color:var(--y);font-style:normal;}
+.lt .tg{color:rgba(255,255,255,.4);font-size:.65rem;display:block;}
+.na{display:flex;gap:12px;align-items:center;}
+.np{color:rgba(255,255,255,.75);font-size:.88rem;font-weight:600;text-decoration:none;}
+.np:hover{color:var(--y);}
+.nc{background:var(--y);color:var(--black);padding:9px 20px;border-radius:50px;font-weight:800;font-size:.85rem;text-decoration:none;transition:all .2s;}
+.nc:hover{background:#fff;transform:scale(1.04);}
+
+/* HERO */
+.hero{background:var(--dark);padding:70px 5% 80px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 30%,rgba(245,197,24,.07) 0%,transparent 55%),radial-gradient(ellipse at 10% 80%,rgba(245,197,24,.04) 0%,transparent 40%);pointer-events:none;}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;max-width:1100px;margin:0 auto;position:relative;}
+.hbadge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,197,24,.1);border:1px solid rgba(245,197,24,.3);color:var(--y);padding:6px 16px;border-radius:50px;font-size:.8rem;font-weight:700;margin-bottom:20px;animation:fu .6s ease both;}
+.blink{width:8px;height:8px;background:var(--y);border-radius:50%;display:inline-block;animation:bl 1.2s infinite;}
+@keyframes bl{0%,100%{opacity:1;}50%{opacity:0;}}
+.hero h1{color:#fff;font-size:clamp(1.9rem,4vw,3rem);font-weight:900;line-height:1.2;margin-bottom:18px;animation:fu .6s .1s ease both;}
+.hero h1 em{color:var(--y);font-style:normal;display:block;}
+.hdesc{color:rgba(255,255,255,.62);font-size:1rem;line-height:1.75;margin-bottom:28px;max-width:500px;animation:fu .6s .2s ease both;}
+.promises{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;animation:fu .6s .25s ease both;}
+.pi{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.8);font-size:.92rem;}
+.pic{width:22px;height:22px;background:var(--y);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:900;color:var(--black);flex-shrink:0;}
+.hbtns{display:flex;gap:14px;flex-wrap:wrap;animation:fu .6s .3s ease both;}
+.bwa{background:var(--g);color:#fff;padding:15px 28px;border-radius:50px;font-weight:800;font-size:.98rem;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(37,211,102,.3);}
+.bwa:hover{background:#1fba58;transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,.45);}
+.bph{border:2px solid rgba(255,255,255,.2);color:#fff;padding:15px 28px;border-radius:50px;font-weight:700;font-size:.95rem;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:7px;}
+.bph:hover{border-color:var(--y);color:var(--y);}
+.hst{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;animation:fu .6s .4s ease both;}
+.sb{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:20px 16px;text-align:center;transition:all .2s;}
+.sb:hover{background:rgba(245,197,24,.08);border-color:rgba(245,197,24,.25);}
+.sb strong{display:block;font-size:1.9rem;font-weight:900;color:var(--y);margin-bottom:4px;}
+.sb span{font-size:.78rem;color:rgba(255,255,255,.45);}
+.wtb{grid-column:1/-1;background:rgba(37,211,102,.08);border:1px solid rgba(37,211,102,.25);border-radius:var(--r);padding:14px;text-align:center;}
+.wtb .wl{font-size:.78rem;font-weight:700;color:#4ade80;margin-bottom:3px;}
+.wtb .wv{font-size:1.6rem;font-weight:900;color:#fff;}
+@keyframes fu{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+
+/* TRUST BAR */
+.tb{background:var(--y);padding:12px 5%;display:flex;justify-content:center;gap:36px;flex-wrap:wrap;}
+.ti{color:var(--black);font-weight:700;font-size:.85rem;}
+
+/* SECTION BASE */
+.sec{padding:65px 5%;}
+.stag{color:var(--yd);font-weight:700;font-size:.75rem;letter-spacing:2.5px;text-transform:uppercase;display:block;margin-bottom:8px;}
+.sec h2{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:900;color:var(--dark);line-height:1.2;}
+.ssub{color:var(--gray);font-size:.95rem;margin-top:8px;max-width:520px;}
+
+/* SERVICES */
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:36px;}
+.sc{background:var(--w);border-radius:var(--r);padding:24px 20px;border:2px solid transparent;transition:all .25s;position:relative;overflow:hidden;}
+.sc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--y);transform:scaleX(0);transition:transform .25s;}
+.sc:hover{border-color:var(--y);transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.09);}
+.sc:hover::after{transform:scaleX(1);}
+.sp{position:absolute;top:12px;left:12px;background:var(--y);color:var(--black);font-size:.68rem;font-weight:800;padding:3px 9px;border-radius:50px;}
+.se{font-size:2.2rem;margin-bottom:12px;display:block;}
+.sc h3{font-size:.95rem;font-weight:800;margin-bottom:7px;color:var(--dark);}
+.sc p{font-size:.82rem;color:var(--gray);line-height:1.55;}
+
+/* CITIES */
+.cs{background:var(--w);padding:65px 5%;}
+.al{font-size:.75rem;font-weight:700;color:var(--gray);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;}
+.tr{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px;}
+.tbn{background:var(--light);border:none;padding:9px 18px;border-radius:50px;font-family:'Heebo',sans-serif;font-size:.85rem;font-weight:600;color:var(--dark);cursor:pointer;transition:all .2s;}
+.tbn:hover{background:rgba(245,197,24,.15);}
+.tbn.active{background:var(--y);color:var(--black);font-weight:800;}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:24px;}
+.ci h3{font-size:1.3rem;font-weight:900;color:var(--dark);margin-bottom:10px;}
+.ci h3 span{color:var(--yd);}
+.ci p{color:var(--gray);font-size:.9rem;line-height:1.7;margin-bottom:18px;}
+.csv{display:grid;grid-template-columns:1fr 1fr;gap:7px;list-style:none;}
+.csv li{display:flex;align-items:center;gap:7px;font-size:.84rem;font-weight:600;color:var(--dark);}
+.csv li::before{content:'✓';width:18px;height:18px;background:var(--y);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.58rem;font-weight:900;color:var(--black);flex-shrink:0;}
+.ccb{background:var(--dark);border-radius:18px;padding:28px;}
+.cav{display:inline-flex;align-items:center;gap:6px;background:rgba(245,197,24,.12);border:1px solid rgba(245,197,24,.3);color:var(--y);padding:5px 14px;border-radius:50px;font-size:.75rem;font-weight:700;margin-bottom:14px;}
+.ccb h4{color:#fff;font-size:1.1rem;font-weight:800;margin-bottom:8px;}
+.ccb p{color:rgba(255,255,255,.52);font-size:.85rem;line-height:1.6;margin-bottom:18px;}
+.cbm{display:block;background:var(--y);color:var(--black);text-align:center;padding:13px;border-radius:50px;font-weight:800;font-size:.9rem;text-decoration:none;margin-bottom:9px;transition:all .2s;}
+.cbm:hover{background:#ffe04a;}
+.cbw{display:block;background:var(--g);color:#fff;text-align:center;padding:11px;border-radius:50px;font-weight:700;font-size:.85rem;text-decoration:none;transition:all .2s;}
+.cbw:hover{background:#1fba58;}
+
+/* PROCESS */
+.ps{background:var(--dark);padding:65px 5%;}
+.ps .stag{color:var(--y);}
+.ps h2{color:#fff;}
+.sr{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px;position:relative;}
+.sr::before{content:'';position:absolute;top:27px;right:12%;left:12%;height:2px;background:linear-gradient(to left,transparent,rgba(245,197,24,.25),rgba(245,197,24,.25),transparent);}
+.st{text-align:center;position:relative;}
+.sn{width:54px;height:54px;background:var(--y);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:900;color:var(--black);margin:0 auto 14px;position:relative;z-index:1;}
+.st h4{color:#fff;font-weight:800;font-size:.95rem;margin-bottom:6px;}
+.st p{color:rgba(255,255,255,.42);font-size:.8rem;line-height:1.5;}
+
+/* FORM */
+.fs{background:var(--dark);padding:70px 5%;}
+.fl{display:grid;grid-template-columns:1fr 1.1fr;gap:55px;align-items:start;max-width:1050px;margin:0 auto;}
+.fl h2{color:#fff;font-size:clamp(1.8rem,3vw,2.3rem);font-weight:900;line-height:1.2;margin-bottom:12px;}
+.fl h2 em{color:var(--y);font-style:normal;}
+.fl>div>p{color:rgba(255,255,255,.52);font-size:.95rem;line-height:1.7;margin-bottom:28px;}
+.ft{display:flex;flex-direction:column;gap:14px;}
+.fti{display:flex;align-items:center;gap:12px;}
+.ftii{font-size:1.25rem;width:38px;height:38px;background:rgba(245,197,24,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ftit strong{display:block;color:#fff;font-size:.88rem;font-weight:700;}
+.ftit span{color:rgba(255,255,255,.4);font-size:.78rem;}
+.fb{background:var(--w);border-radius:20px;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+.fbh{text-align:center;margin-bottom:22px;padding-bottom:18px;border-bottom:2px solid var(--light);}
+.fbh h3{font-size:1.2rem;font-weight:900;color:var(--dark);margin-bottom:6px;}
+.ftm{display:inline-flex;align-items:center;gap:5px;background:#fef3c7;color:#92400e;padding:4px 12px;border-radius:50px;font-size:.78rem;font-weight:700;}
+.fr2{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+.fg{margin-bottom:14px;}
+.fg label{display:block;font-weight:700;font-size:.8rem;color:var(--dark);margin-bottom:5px;}
+.fg label .rq{color:#ef4444;}
+.fg input,.fg select,.fg textarea{width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:10px;font-family:'Heebo',sans-serif;font-size:.9rem;color:var(--dark);background:#fafafa;direction:rtl;transition:all .2s;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--y);background:#fff;box-shadow:0 0 0 4px rgba(245,197,24,.1);}
+.fg textarea{resize:vertical;min-height:80px;}
+.fsbtn{width:100%;background:var(--y);color:var(--black);padding:15px;border:none;border-radius:50px;font-family:'Heebo',sans-serif;font-size:1rem;font-weight:900;cursor:pointer;transition:all .2s;margin-top:4px;}
+.fsbtn:hover{background:var(--yd);transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,197,24,.35);}
+.fsbtn:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+.fpv{text-align:center;font-size:.75rem;color:var(--gray);margin-top:10px;}
+.fpv button{background:none;border:none;color:var(--yd);font-size:.75rem;cursor:pointer;font-family:'Heebo',sans-serif;padding:0;text-decoration:underline;}
+.sm{display:none;background:#ecfdf5;border:2px solid #6ee7b7;border-radius:12px;padding:20px;text-align:center;margin-top:14px;}
+.sm .se2{font-size:2.2rem;display:block;margin-bottom:8px;}
+.sm strong{display:block;color:#065f46;font-weight:900;font-size:1rem;margin-bottom:4px;}
+.sm span{color:#047857;font-size:.85rem;}
+
+/* WHY */
+.wg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;margin-top:36px;}
+.wc{background:var(--w);border-radius:var(--r);padding:26px 20px;border-top:4px solid var(--y);transition:all .2s;}
+.wc:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.07);}
+.wi{font-size:1.9rem;margin-bottom:12px;display:block;}
+.wc h3{font-size:.95rem;font-weight:800;margin-bottom:6px;color:var(--dark);}
+.wc p{font-size:.82rem;color:var(--gray);line-height:1.6;}
+
+/* REVIEWS */
+.rvsec{background:var(--ow);padding:65px 5%;}
+.rvg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;margin-top:36px;}
+.rvc{background:var(--w);border-radius:var(--r);padding:24px;border-right:4px solid var(--y);box-shadow:0 2px 12px rgba(0,0,0,.05);transition:all .2s;}
+.rvc:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.09);}
+.rvt{display:flex;justify-content:space-between;align-items:start;margin-bottom:12px;}
+.rvn{font-weight:800;font-size:.93rem;color:var(--dark);display:block;}
+.rvcity{font-size:.78rem;color:var(--gray);}
+.stars{color:#f59e0b;font-size:.9rem;letter-spacing:1px;}
+.rvc p{font-size:.87rem;color:#374151;line-height:1.65;margin-bottom:12px;}
+.rvtag{display:inline-block;background:#fef9c3;color:#713f12;font-size:.73rem;font-weight:700;padding:3px 10px;border-radius:50px;}
+
+/* FAQ */
+.faqsec{background:var(--w);padding:65px 5%;}
+.faqwrap{max-width:760px;margin:36px auto 0;}
+.faqi{border-bottom:1px solid var(--border);overflow:hidden;}
+.faqbtn{width:100%;background:none;border:none;padding:18px 5px;text-align:right;font-family:'Heebo',sans-serif;font-size:.95rem;font-weight:700;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:color .2s;}
+.faqbtn:hover{color:var(--yd);}
+.faqarr{font-size:.75rem;color:var(--gray);transition:transform .3s;flex-shrink:0;}
+.faqans{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faqans p{padding:0 5px 18px;font-size:.88rem;color:var(--gray);line-height:1.7;}
+.faqopen .faqarr{transform:rotate(180deg);}
+.faqopen .faqans{max-height:250px;}
+
+/* BOTTOM CTA */
+.bcta{background:var(--y);padding:55px 5%;text-align:center;}
+.bcta h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:900;color:var(--black);margin-bottom:10px;}
+.bcta p{color:rgba(0,0,0,.58);font-size:1rem;margin-bottom:26px;}
+.bbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.bdk{background:var(--dark);color:#fff;padding:15px 30px;border-radius:50px;font-weight:800;font-size:.95rem;text-decoration:none;transition:all .2s;display:inline-flex;align-items:center;gap:7px;}
+.bdk:hover{background:var(--black);transform:translateY(-2px);}
+
+/* FOOTER */
+footer{background:var(--black);padding:42px 5% 24px;}
+.fg2{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.07);}
+.fbrand p{color:rgba(255,255,255,.4);font-size:.83rem;line-height:1.65;margin-top:12px;max-width:250px;}
+.fcol h4{color:#fff;font-weight:800;font-size:.88rem;margin-bottom:14px;}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.fcol ul li a{color:rgba(255,255,255,.4);text-decoration:none;font-size:.83rem;transition:color .2s;}
+.fcol ul li a:hover{color:var(--y);}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.fbot>p{color:rgba(255,255,255,.25);font-size:.78rem;}
+.flegal{display:flex;gap:16px;align-items:center;}
+.flegal button{background:none;border:none;color:rgba(255,255,255,.28);font-family:'Heebo',sans-serif;font-size:.78rem;cursor:pointer;padding:0;transition:color .2s;}
+.flegal button:hover{color:var(--y);}
+.fadm{color:rgba(255,255,255,.15);font-size:.75rem;text-decoration:none;}
+
+/* WA FLOAT */
+.waf{position:fixed;bottom:22px;left:22px;width:58px;height:58px;background:var(--g);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.5);z-index:999;transition:transform .2s;animation:wap 2.5s infinite;}
+.waf:hover{transform:scale(1.12);}
+@keyframes wap{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.5);}50%{box-shadow:0 4px 35px rgba(37,211,102,.8),0 0 0 8px rgba(37,211,102,.08);}}
+
+/* MODALS */
+.mo{display:none;position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:1000;overflow-y:auto;padding:20px;align-items:flex-start;justify-content:center;}
+.mo.open{display:flex;}
+.mb{background:var(--w);border-radius:20px;max-width:620px;width:100%;padding:36px 32px;margin:20px auto;direction:rtl;}
+.mh{display:flex;justify-content:space-between;align-items:start;margin-bottom:6px;}
+.mh h2{font-size:1.35rem;font-weight:900;color:var(--dark);}
+.mcl{background:none;border:none;font-size:1.9rem;cursor:pointer;color:#9ca3af;line-height:1;padding:0;}
+.mmt{font-size:.75rem;color:#9ca3af;margin-bottom:14px;}
+.mhr{border:none;border-top:2px solid var(--light);margin-bottom:16px;}
+.mbody{font-size:.87rem;line-height:1.8;color:#374151;max-height:60vh;overflow-y:auto;padding-left:4px;}
+.mbody h3{font-weight:900;color:var(--dark);margin-top:16px;margin-bottom:5px;font-size:.92rem;}
+.mbody a{color:var(--yd);}
+.mbt{width:100%;margin-top:18px;background:var(--y);color:var(--black);border:none;padding:14px;border-radius:50px;font-family:'Heebo',sans-serif;font-weight:900;font-size:.98rem;cursor:pointer;transition:all .2s;}
+.mbt:hover{background:var(--yd);}
+
+/* RESPONSIVE */
+@media(max-width:900px){.hg,.fl,.fg2{grid-template-columns:1fr;}.sr{grid-template-columns:repeat(2,1fr);}.sr::before{display:none;}.cg{grid-template-columns:1fr;}}
+@media(max-width:600px){.fr2{grid-template-columns:1fr;}.np{display:none;}.hst{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">⚡ AIfixsmart – תיקונים קטנים בדרך חכמה &nbsp;|&nbsp; <a href="tel:0552611010">📞 055-261-1010</a> &nbsp;|&nbsp; ✅ זמינות מהיום להיום</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nl">
+    <div class="lb"><span class="ai">AI</span><span class="wr">🔧</span></div>
+    <div class="lt"><span class="br"><em>fix</em>smart</span><span class="tg">תיקונים קטנים בדרך חכמה</span></div>
+  </a>
+  <div class="na">
+    <a href="tel:0552611010" class="np">📞 055-261-1010</a>
+    <a href="#lead-form" class="nc">השאר פרטים ←</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hg">
+    <div>
+      <div class="hbadge"><span class="blink"></span> זמין עכשיו • הגעה מהיום להיום</div>
+      <h1>אנחנו מגיעים<br><em>אליך היום</em></h1>
+      <p class="hdesc">הנדימן המקצועי לכל עבודות הבית — עבודה נקייה, מחיר שקוף, ואחריות מלאה.</p>
+      <div class="promises">
+        <div class="pi"><span class="pic">✓</span> הצעת מחיר תוך דקות — ללא התחייבות</div>
+        <div class="pi"><span class="pic">✓</span> מגיעים מהיום להיום ברוב האזורים</div>
+        <div class="pi"><span class="pic">✓</span> ביטוח מקצועי מלא + אחריות על העבודה</div>
+        <div class="pi"><span class="pic">✓</span> מחיר סופי לפני תחילת עבודה — ללא הפתעות</div>
+      </div>
+      <div class="hbtns">
+        <a href="https://wa.me/972552611010?text=שלום AIfixsmart, אשמח לקבל הצעת מחיר" class="bwa">💬 קבל הצעה בוואטסאפ</a>
+        <a href="tel:0552611010" class="bph">📞 055-261-1010</a>
+      </div>
+    </div>
+    <div class="hst">
+      <div class="sb"><strong>500+</strong><span>לקוחות מרוצים</span></div>
+      <div class="sb"><strong>5★</strong><span>דירוג ממוצע</span></div>
+      <div class="sb"><strong>8+</strong><span>שנות ניסיון</span></div>
+      <div class="sb"><strong>היום</strong><span>זמן הגעה</span></div>
+      <div class="wtb"><div class="wl">⏱️ מענה ממוצע בוואטסאפ</div><div class="wv">4 דקות</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="tb">
+  <span class="ti">✅ ביטוח מקצועי מלא</span>
+  <span class="ti">✅ ללא עלות נסיעה</span>
+  <span class="ti">✅ אחריות על כל עבודה</span>
+  <span class="ti">✅ תשלום אחרי שביעות רצון</span>
+</div>
+
+<!-- SERVICES -->
+<section class="sec" style="background:var(--w);">
+  <span class="stag">השירותים שלנו</span>
+  <h2>מה אנחנו עושים?</h2>
+  <p class="ssub">כל מה שהבית שלך צריך — איש מקצוע אחד אמין</p>
+  <div class="sg">
+    <div class="sc"><span class="sp">🔥 הכי מבוקש</span><span class="se" style="margin-top:28px;">📺</span><h3>תליית טלוויזיה</h3><p>תליה מקצועית על כל סוגי הקירות. הסתרת כבלים, כיוון מושלם.</p></div>
+    <div class="sc"><span class="se">🕊️</span><h3>הרחקת יונים</h3><p>רשתות, קוצים ופתרונות קבע. ידידותי לבעלי חיים, אחריות 3 שנים.</p></div>
+    <div class="sc"><span class="se">🚿</span><h3>אינסטלציה קלה</h3><p>ברזים מטפטפים, סתימות, החלפת אסלה — תיקון ביום הפנייה.</p></div>
+    <div class="sc"><span class="se">💡</span><h3>חשמל קל</h3><p>שקעים, מפסקים, תאורה, מאווררים — עד 25 אמפר.</p></div>
+    <div class="sc"><span class="se">🔨</span><h3>הרכבת רהיטים</h3><p>IKEA וכל יצרן אחר — מהיר, מדויק, ללא כאב ראש.</p></div>
+    <div class="sc"><span class="se">❄️</span><h3>התקנת מזגנים</h3><p>התקנה, פירוק, ניקוי ותחזוקה שנתית לכל מותג.</p></div>
+    <div class="sc"><span class="se">🎨</span><h3>צביעה וגבס</h3><p>תיקון סדקים, טיח, צביעת חדר — גמר מושלם.</p></div>
+    <div class="sc"><span class="se">🪟</span><h3>וילונות ורולרים</h3><p>מוטות, רולרים, ורטיקלים ותריסי גלילה.</p></div>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section class="cs">
+  <span class="stag">אזורי שירות</span>
+  <h2>AIfixsmart מגיע אליך</h2>
+  <p class="ssub">בחר את העיר שלך — מכסים את כל אזור השרון והמרכז</p>
+  <div style="margin-top:28px;">
+    <div class="al">🟡 אזור השרון</div>
+    <div class="tr" id="st">
+      <button class="tbn active" onclick="sw('rosh-haayin',this)">📍 ראש העין</button>
+      <button class="tbn" onclick="sw('kfar-saba',this)">כפר סבא</button>
+      <button class="tbn" onclick="sw('hod-hasharon',this)">הוד השרון</button>
+      <button class="tbn" onclick="sw('ra-anana',this)">רעננה</button>
+      <button class="tbn" onclick="sw('herzliya',this)">הרצליה</button>
+      <button class="tbn" onclick="sw('ramat-hasharon',this)">רמת השרון</button>
+      <button class="tbn" onclick="sw('netanya',this)">נתניה</button>
+    </div>
+    <div class="al" style="margin-top:12px;">🔵 אזור המרכז</div>
+    <div class="tr" id="ct">
+      <button class="tbn" onclick="sw('petah-tikva',this)">פתח תקווה</button>
+      <button class="tbn" onclick="sw('ramat-gan',this)">רמת גן</button>
+      <button class="tbn" onclick="sw('givatayim',this)">גבעתיים</button>
+      <button class="tbn" onclick="sw('bnei-brak',this)">בני ברק</button>
+      <button class="tbn" onclick="sw('holon',this)">חולון</button>
+      <button class="tbn" onclick="sw('bat-yam',this)">בת ים</button>
+      <button class="tbn" onclick="sw('shoham',this)">שהם</button>
+      <button class="tbn" onclick="sw('rishon',this)">ראשון לציון</button>
+      <button class="tbn" onclick="sw('elad',this)">אלעד</button>
+      <button class="tbn" onclick="sw('lod',this)">לוד</button>
+      <button class="tbn" onclick="sw('ramla',this)">רמלה</button>
+    </div>
+  </div>
+  <div id="cp"></div>
+</section>
+
+<!-- PROCESS -->
+<section class="ps sec">
+  <span class="stag">איך זה עובד</span>
+  <h2>מפנייה לפתרון תוך שעות</h2>
+  <div class="sr">
+    <div class="st"><div class="sn">1</div><h4>שולח וואטסאפ</h4><p>30 שניות, ללא התחייבות</p></div>
+    <div class="st"><div class="sn">2</div><h4>מקבל הצעה</h4><p>תוך דקות — מחיר מדויק</p></div>
+    <div class="st"><div class="sn">3</div><h4>קובעים מועד</h4><p>לרוב מהיום להיום</p></div>
+    <div class="st"><div class="sn">4</div><h4>עבודה נקייה</h4><p>מגיעים, עובדים, מנקים</p></div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="fs" id="lead-form">
+  <div class="fl">
+    <div>
+      <span class="stag" style="color:var(--y);">השאר פרטים</span>
+      <h2>קבל הצעת מחיר<br><em>תוך דקות</em></h2>
+      <p>מלא את הטופס ונחזור אליך עם הצעת מחיר ומועד הגעה.</p>
+      <div class="ft">
+        <div class="fti"><div class="ftii">⚡</div><div class="ftit"><strong>מענה תוך דקות</strong><span>בשעות הפעילות 08:00–20:00</span></div></div>
+        <div class="fti"><div class="ftii">💰</div><div class="ftit"><strong>מחיר שקוף מראש</strong><span>ללא תוספות הפתעה</span></div></div>
+        <div class="fti"><div class="ftii">🛡️</div><div class="ftit"><strong>ביטוח מקצועי + אחריות</strong><span>על כל עבודה</span></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="fb">
+        <div class="fbh"><h3>📋 השאר פרטים לקבלת הצעה</h3><span class="ftm">⏱️ מענה ממוצע: 4 דקות</span></div>
+        <div class="fr2">
+          <div class="fg"><label>שם מלא <span class="rq">*</span></label><input type="text" id="fn" placeholder="ישראל ישראלי"></div>
+          <div class="fg"><label>טלפון <span class="rq">*</span></label><input type="tel" id="fp" placeholder="055-0000000"></div>
+        </div>
+        <div class="fr2">
+          <div class="fg"><label>עיר</label>
+            <select id="fc">
+              <option value="">בחר עיר...</option>
+              <option>ראש העין</option><option>כפר סבא</option><option>הוד השרון</option><option>רעננה</option><option>הרצליה</option><option>רמת השרון</option><option>נתניה</option><option>פתח תקווה</option><option>רמת גן</option><option>גבעתיים</option><option>בני ברק</option><option>חולון</option><option>בת ים</option><option>שהם</option><option>ראשון לציון</option><option>אלעד</option><option>לוד</option><option>רמלה</option><option>אחר</option>
+            </select>
+          </div>
+          <div class="fg"><label>שירות</label>
+            <select id="fsr">
+              <option value="">בחר שירות...</option>
+              <option>תליית טלוויזיה</option><option>הרחקת יונים</option><option>אינסטלציה קלה</option><option>חשמל קל</option><option>הרכבת רהיטים</option><option>התקנת מזגן</option><option>צביעה וגבס</option><option>וילונות ורולרים</option><option>אחר</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>מתי נוח?</label>
+          <select id="ft"><option>היום — בהקדם</option><option>היום אחה"צ</option><option>מחר בבוקר</option><option>גמיש — תיאום עמי</option></select>
+        </div>
+        <div class="fg"><label>תיאור קצר</label><textarea id="fd" placeholder="ספר לנו בקצרה מה צריך לעשות..."></textarea></div>
+        <button class="fsbtn" id="sbtn" onclick="subForm()">שלח ← קבל הצעה תוך דקות</button>
+        <p class="fpv">🔒 הפרטים שמורים ולא יועברו לצד שלישי. ראה <button onclick="openM('privacy')">מדיניות פרטיות</button></p>
+        <div class="sm" id="smsg"><span class="se2">🎉</span><strong>תודה! קיבלנו את פנייתך</strong><span>נחזור אליך תוך דקות עם הצעת מחיר</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="sec" style="background:var(--ow);">
+  <span class="stag">למה אנחנו</span>
+  <h2>הבדל שמרגישים</h2>
+  <p class="ssub">לא עוד המתנה של שבוע לאיש מקצוע שלא מגיע</p>
+  <div class="wg">
+    <div class="wc"><span class="wi">⚡</span><h3>הגעה מהיום להיום</h3><p>רוב הקריאות מטופלות ביום הפנייה.</p></div>
+    <div class="wc"><span class="wi">💬</span><h3>הצעת מחיר שקופה</h3><p>מחיר סופי לפני תחילת עבודה — אין הפתעות.</p></div>
+    <div class="wc"><span class="wi">🧹</span><h3>עבודה נקייה</h3><p>מגיעים עם כל הציוד, עובדים בסדר ומנקים לפני יציאה.</p></div>
+    <div class="wc"><span class="wi">🛡️</span><h3>ביטוח מלא</h3><p>ביטוח מקצועי לכל סוג עבודה — שקט נפשי מלא.</p></div>
+    <div class="wc"><span class="wi">🤝</span><h3>אחריות על העבודה</h3><p>נחזור ונתקן כל בעיה שנגרמה מעבודתנו — ללא עלות.</p></div>
+    <div class="wc"><span class="wi">⭐</span><h3>500+ לקוחות מרוצים</h3><p>מוניטין שנבנה בעבודה קשה לאורך שנים.</p></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="rvsec">
+  <span class="stag">ביקורות לקוחות</span>
+  <h2>מה אומרים עלינו</h2>
+  <p class="ssub">מאות משפחות כבר סומכות עלינו</p>
+  <div class="rvg">
+    <div class="rvc">
+      <div class="rvt"><div><span class="rvn">מיכל כהן</span><span class="rvcity">ראש העין</span></div><span class="stars">★★★★★</span></div>
+      <p>תלה לי טלוויזיה ענקית בסלון תוך פחות משעה, כבלים מוסתרים בצורה מושלמת. מקצועי, מסודר ועל הזמן!</p>
+      <span class="rvtag">תליית טלוויזיה</span>
+    </div>
+    <div class="rvc">
+      <div class="rvt"><div><span class="rvn">אורי ברקוביץ</span><span class="rvcity">הוד השרון</span></div><span class="stars">★★★★★</span></div>
+      <p>הרכיב ריהוט IKEA לחדר ילדים שלם תוך שלוש שעות. מהיר, קפדן, ומחיר הוגן. בהחלט חוזר שוב.</p>
+      <span class="rvtag">הרכבת רהיטים</span>
+    </div>
+    <div class="rvc">
+      <div class="rvt"><div><span class="rvn">שרית לוי</span><span class="rvcity">כפר סבא</span></div><span class="stars">★★★★★</span></div>
+      <p>היו לי יונים על המרפסת חצי שנה. הגיע, הציב רשתות, ומאז שקט מוחלט. ממליצה בחום לכולם!</p>
+      <span class="rvtag">הרחקת יונים</span>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faqsec">
+  <span class="stag">שאלות נפוצות</span>
+  <h2>כל מה שרצית לדעת</h2>
+  <div class="faqwrap">
+    <div class="faqitem"><button class="faqbtn" onclick="tFaq(this)">כמה זמן לוקח לקבל הצעת מחיר? <span class="faqarr">▼</span></button><div class="faqans"><p>בשעות הפעילות (08:00–20:00) אנחנו מחזירים תשובה תוך 4 דקות בממוצע דרך וואטסאפ.</p></div></div>
+    <div class="faqitem"><button class="faqbtn" onclick="tFaq(this)">האם אתם מגיעים ביום ההזמנה? <span class="faqarr">▼</span></button><div class="faqans"><p>ברוב המקרים — כן. אם פנית עד 14:00, בדרך כלל נגיע באותו יום.</p></div></div>
+    <div class="faqitem"><button class="faqbtn" onclick="tFaq(this)">האם יש עלות נסיעה? <span class="faqarr">▼</span></button><div class="faqans"><p>לא. המחיר שתקבל הוא המחיר הסופי — כולל הכל, ללא עלויות נסיעה נסתרות.</p></div></div>
+    <div class="faqitem"><button class="faqbtn" onclick="tFaq(this)">האם אתם מבוטחים? <span class="faqarr">▼</span></button><div class="faqans"><p>כן, ביטוח מקצועי מלא. כל עבודה מגיעה עם אחריות — נחזור ונתקן ללא עלות נוספת.</p></div></div>
+    <div class="faqitem"><button class="faqbtn" onclick="tFaq(this)">אילו אמצעי תשלום מקבלים? <span class="faqarr">▼</span></button><div class="faqans"><p>מזומן, העברה בנקאית, ביט ופייבוקס. תשלום רק לאחר השלמת העבודה ולשביעות רצון מלאה.</p></div></div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bcta">
+  <h2>מוכן לסיים את הבעיה בבית?</h2>
+  <p>אל תדחה — השאר פרטים עכשיו וקבל מענה תוך דקות</p>
+  <div class="bbtns">
+    <a href="#lead-form" class="bdk">✉️ השאר פרטים</a>
+    <a href="https://wa.me/972552611010?text=שלום AIfixsmart, אשמח לקבל הצעת מחיר" class="bwa">💬 וואטסאפ עכשיו</a>
+    <a href="tel:0552611010" class="bdk">📞 055-261-1010</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg2">
+    <div class="fbrand">
+      <a href="#" class="nl" style="display:inline-flex;margin-bottom:10px;">
+        <div class="lb"><span class="ai">AI</span><span class="wr">🔧</span></div>
+        <div class="lt"><span class="br" style="color:#fff;"><em>fix</em>smart</span><span class="tg">תיקונים קטנים בדרך חכמה</span></div>
+      </a>
+      <p>שירות הנדימן החכם לכל עבודות הבית. זמינים מהיום להיום בכל אזור השרון והמרכז.</p>
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:8px;">
+        <a href="tel:0552611010" style="color:var(--y);font-size:.85rem;font-weight:700;text-decoration:none;">📞 055-261-1010</a>
+        <a href="https://wa.me/972552611010" style="color:#4ade80;font-size:.85rem;font-weight:700;text-decoration:none;">💬 וואטסאפ</a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>שירותים</h4>
+      <ul>
+        <li><a href="#lead-form">תליית טלוויזיה</a></li>
+        <li><a href="#lead-form">הרחקת יונים</a></li>
+        <li><a href="#lead-form">אינסטלציה קלה</a></li>
+        <li><a href="#lead-form">חשמל קל</a></li>
+        <li><a href="#lead-form">הרכבת רהיטים</a></li>
+        <li><a href="#lead-form">התקנת מזגנים</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>אזורי שירות</h4>
+      <ul>
+        <li><a href="#">ראש העין</a></li>
+        <li><a href="#">כפר סבא</a></li>
+        <li><a href="#">הוד השרון</a></li>
+        <li><a href="#">נתניה</a></li>
+        <li><a href="#">פתח תקווה</a></li>
+        <li><a href="#">רמת גן</a></li>
+        <li><a href="#">חולון</a></li>
+        <li><a href="#">ראשון לציון</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <p>© 2025 AIfixsmart – תיקונים קטנים בדרך חכמה. כל הזכויות שמורות.</p>
+    <div class="flegal">
+      <button onclick="openM('privacy')">מדיניות פרטיות</button>
+      <button onclick="openM('terms')">תקנון שימוש</button>
+      <a href="/admin/" class="fadm">ניהול</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a href="https://wa.me/972552611010?text=שלום AIfixsmart, אשמח לקבל הצעת מחיר" class="waf" title="שלח וואטסאפ">💬</a>
+
+<!-- MODAL PRIVACY -->
+<div id="modal-privacy" class="mo">
+  <div class="mb">
+    <div class="mh"><h2>מדיניות פרטיות</h2><button class="mcl" onclick="closeM('privacy')">×</button></div>
+    <p class="mmt">AIfixsmart | aifixsmart.co.il | עדכון: ינואר 2025</p>
+    <hr class="mhr">
+    <div class="mbody">
+      <p>מדיניות זו מסדירה את אופן השימוש במידע האישי שנאסף באתר, בהתאם ל<strong>חוק הגנת הפרטיות, התשמ"א–1981</strong>.</p>
+      <h3>מה אנחנו אוספים</h3>
+      <p>שם, טלפון, עיר ותיאור השירות — לצורך מתן הצעת מחיר ותיאום ביקור בלבד.</p>
+      <h3>איך אנחנו משתמשים במידע</h3>
+      <p>המידע ישמש אך ורק ליצירת קשר ומתן השירות. <strong>לא נעביר את פרטיך לאף גורם שלישי</strong> ולא נשלח דיוור שיווקי ללא הסכמתך.</p>
+      <h3>כמה זמן שומרים</h3>
+      <p>המידע נשמר עד 24 חודשים ממועד הפנייה, או עד מחיקתו לפי בקשתך.</p>
+      <h3>הזכויות שלך</h3>
+      <p>יש לך זכות לעיין במידע, לתקן אותו או למחוק אותו. לפנייה: <strong>055-261-1010</strong> או בוואטסאפ.</p>
+      <h3>אבטחה</h3>
+      <p>האתר מאובטח ב-HTTPS. הגישה למידע מוגבלת לבעל העסק בלבד.</p>
+      <p style="margin-top:14px;font-size:.8rem;color:#9ca3af;">לפרטים נוספים: <a href="https://www.gov.il/he/departments/legalinfo/privacy_protection_regulations" target="_blank">אתר רשם מאגרי המידע</a></p>
+    </div>
+    <button class="mbt" onclick="closeM('privacy')">הבנתי — סגור</button>
+  </div>
+</div>
+
+<!-- MODAL TERMS -->
+<div id="modal-terms" class="mo">
+  <div class="mb">
+    <div class="mh"><h2>תקנון שימוש</h2><button class="mcl" onclick="closeM('terms')">×</button></div>
+    <p class="mmt">AIfixsmart | aifixsmart.co.il | עדכון: ינואר 2025</p>
+    <hr class="mhr">
+    <div class="mbody">
+      <p>השימוש באתר ובשירותי AIfixsmart מהווה הסכמה לתנאים הבאים, בהתאם לדין הישראלי.</p>
+      <h3>הצעות מחיר</h3>
+      <p>ההצעה היא אומדן ראשוני. המחיר הסופי יאושר לפני תחילת העבודה — ללא הפתעות.</p>
+      <h3>ביטול תיאום</h3>
+      <p>ניתן לבטל עד שעתיים לפני ההגעה ללא עלות. ביטול מאוחר עשוי לכלול דמי נסיעה בלבד — בהתאם לחוק הגנת הצרכן.</p>
+      <h3>אחריות</h3>
+      <p>כל עבודה מגיעה עם אחריות שתפורט לפני תחילתה. נחזור לתקן כל ליקוי שנגרם — ללא תוספת תשלום.</p>
+      <h3>תשלום</h3>
+      <p>תשלום רק לאחר סיום העבודה ואישורך. אמצעים: מזומן, העברה, ביט, פייבוקס.</p>
+      <h3>סמכות שיפוט</h3>
+      <p>כל סכסוך יידון בבתי המשפט במחוז מרכז, לפי הדין הישראלי.</p>
+    </div>
+    <button class="mbt" onclick="closeM('terms')">הבנתי — סגור</button>
+  </div>
+</div>
+
+<script>
+const CITIES={
+  'rosh-haayin':{name:'ראש העין',desc:'אנחנו הנדימן המקומי של ראש העין. שנים של עבודה בשכונות נאות אשלים, מורשה, גינות ורמת רזיאל.',wa:'אני מראש העין'},
+  'kfar-saba':{name:'כפר סבא',desc:'שירות לכל שכונות כפר סבא — רמות נוה, שכונת הוותיקים והפארק.',wa:'אני מכפר סבא'},
+  'hod-hasharon':{name:'הוד השרון',desc:'מכסים את כל שכונות הוד השרון — מגן, מרכז העיר ואזור הוילות.',wa:'אני מהוד השרון'},
+  'ra-anana':{name:'רעננה',desc:'שירות לכל שכונות רעננה — נווה זמר, מרכז העיר ועוד.',wa:'אני מרעננה'},
+  'herzliya':{name:'הרצליה',desc:'מגיעים לכל שכונות הרצליה — פיתוח, מקלף, שכונות הצפון.',wa:'אני מהרצליה'},
+  'ramat-hasharon':{name:'רמת השרון',desc:'הנדימן החכם לרמת השרון — כל השכונות. שירות מקצועי ומהיר.',wa:'אני מרמת השרון'},
+  'netanya':{name:'נתניה',desc:'שירות לנתניה ושכונותיה — עיר ימים, קריית נורדאו, פולג ועוד.',wa:'אני מנתניה'},
+  'petah-tikva':{name:'פתח תקווה',desc:'שירות לפתח תקווה — קריית משה, שינקין, אם המושבות.',wa:'אני מפתח תקווה'},
+  'ramat-gan':{name:'רמת גן',desc:'שירות לרמת גן — כפר אז"ר, נווה עופר, הרצל ועוד.',wa:'אני מרמת גן'},
+  'givatayim':{name:'גבעתיים',desc:'הנדימן לגבעתיים — עבודה ברמה גבוהה במחיר תחרותי.',wa:'אני מגבעתיים'},
+  'bnei-brak':{name:'בני ברק',desc:'שירות לבני ברק — כל השכונות. שירות מהיר ובמחיר הוגן.',wa:'אני מבני ברק'},
+  'holon':{name:'חולון',desc:'הנדימן החכם לחולון — כל השכונות. מגיעים מהיום להיום.',wa:'אני מחולון'},
+  'bat-yam':{name:'בת ים',desc:'שירות לבת ים — כל האזורים. עבודה נקייה, מחיר שקוף.',wa:'אני מבת ים'},
+  'shoham':{name:'שהם',desc:'שירות לשהם — עיר צעירה עם הרבה צרכי תחזוקה. מגיעים מהר.',wa:'אני משהם'},
+  'rishon':{name:'ראשון לציון',desc:'שירות לראשון לציון — נחלת יהודה, המושבה, שכונות הצפון.',wa:'אני מראשון לציון'},
+  'elad':{name:'אלעד',desc:'שירות לאלעד — כל השכונות. זמינות גבוהה ומחירים הוגנים.',wa:'אני מאלעד'},
+  'lod':{name:'לוד',desc:'שירות ללוד — שכונת רמות, כרמי הגדול, מרכז העיר.',wa:'אני מלוד'},
+  'ramla':{name:'רמלה',desc:'שירות לרמלה — כל האזורים. מקצועי, מהיר ובמחיר הוגן.',wa:'אני מרמלה'},
+};
+const SV=['תליית טלוויזיה','הרחקת יונים','תליית מדפים','הרכבת רהיטים','אינסטלציה קלה','חשמל קל','התקנת מזגנים','צביעה וגבס'];
+
+function rc(id){
+  const c=CITIES[id];if(!c)return;
+  document.getElementById('cp').innerHTML=`
+  <div class="cg" style="animation:fu .35s ease;">
+    <div class="ci">
+      <h3>AIfixsmart <span>${c.name}</span></h3>
+      <p>${c.desc}</p>
+      <ul class="csv">${SV.map(s=>`<li>${s}</li>`).join('')}</ul>
+    </div>
+    <div class="ccb">
+      <div class="cav"><span class="blink"></span> זמין היום ב${c.name}</div>
+      <h4>מגיעים אליך תוך שעות</h4>
+      <p>השאר פרטים ונחזור אליך תוך דקות עם הצעת מחיר.</p>
+      <a href="#lead-form" class="cbm">קבל הצעת מחיר ←</a>
+      <a href="https://wa.me/972552611010?text=שלום AIfixsmart, ${c.wa} ואשמח לקבל הצעת מחיר" class="cbw">💬 שלח וואטסאפ</a>
+    </div>
+  </div>`;
+}
+function sw(id,btn){
+  document.querySelectorAll('.tbn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  rc(id);
+}
+rc('rosh-haayin');
+
+function tFaq(btn){
+  const it=btn.closest('.faqitem');
+  const op=it.classList.contains('faqopen');
+  document.querySelectorAll('.faqitem').forEach(i=>i.classList.remove('faqopen'));
+  if(!op)it.classList.add('faqopen');
+}
+
+function subForm(){
+  const n=document.getElementById('fn').value.trim();
+  const p=document.getElementById('fp').value.trim();
+  const btn=document.getElementById('sbtn');
+  if(!n||!p){
+    if(!n)document.getElementById('fn').style.borderColor='#ef4444';
+    if(!p)document.getElementById('fp').style.borderColor='#ef4444';
+    return;
+  }
+  btn.disabled=true;btn.textContent='⏳ שולח...';
+  setTimeout(()=>{btn.style.display='none';document.getElementById('smsg').style.display='block';},800);
+}
+
+function openM(t){
+  const m=document.getElementById('modal-'+t);
+  if(m){m.classList.add('open');document.body.style.overflow='hidden';}
+}
+function closeM(t){
+  const m=document.getElementById('modal-'+t);
+  if(m){m.classList.remove('open');document.body.style.overflow='';}
+}
+document.querySelectorAll('.mo').forEach(m=>{
+  m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('open');document.body.style.overflow='';}});
+});
+window.addEventListener('keydown',e=>{
+  if(e.key==='Escape')document.querySelectorAll('.mo.open').forEach(m=>{m.classList.remove('open');document.body.style.overflow='';});
+});
+
+if(window.netlifyIdentity){
+  window.netlifyIdentity.on('init',user=>{
+    if(!user)window.netlifyIdentity.on('login',()=>{document.location.href='/admin/';});
+  });
+}
+</script>
+</body>
+</html>
